@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import {Routes, Route, Outlet } from 'react-router-dom';
+
+import Hero from './landing/hero';
+import Categories from './main/productCatalog';
+import Aminoacidos from './main/misc/amino';
+import Creatinas from './main/misc/creatina';
+import Ganadores from './main/misc/ganadores';
+import Preentrenos from './main/misc/preentreno';
+import Proteinas from './main/misc/proteinas';
+import Termogenicos from './main/misc/termogenicos';
+
+const Layout = () => {
+    return (
+      <div className="w-full">
+        <Categories />
+        <div className='w-full'>   
+          <Outlet />
+        </div>
+      </div>
+    );
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Hero/>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route path="proteinas" index element={<Proteinas />} />
+            <Route path="ganadores" element={<Ganadores />} />
+            <Route path="creatinas" element={<Creatinas />} />
+            <Route path="preentrenos" element={<Preentrenos />} />
+            <Route path="aminoacidos" element={<Aminoacidos />} />
+            <Route path="termogenicos" element={<Termogenicos />} />
+        </Route>
+      </Routes>
     </>
+
   )
 }
 

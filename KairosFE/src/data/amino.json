@@ -1,0 +1,58 @@
+[
+    {
+    "Categoria": "Aminoacidos",
+    "Titulo": "CELL C4 60serv",
+    "Sabor": "Strawberry-Margarita",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/355"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "CELL C4 Original Pre Workout 50 serv",
+    "Sabor": "Fruit Punch, Icy Blue Raspberry, Pink Lemonade, Sour Green Apple, Watermelon",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/356"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "PS MR.HYDE Nightmare 30 serv",
+    "Sabor": "Jawbreaker",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/357"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "PS MR.HYDE Max Pump Pre Workout 20 serv",
+    "Sabor": "Blue Razz, Fruit Punch, Unflavored",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/358"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "PS MR.HYDE Nightmare 30 serv",
+    "Sabor": "Black n' Blueberry, Blood Berry, Orange Acreamsicle",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/359"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "PS MR.HYDE Xtreme 30 serv",
+    "Sabor": "Blue Razz Blitz, Pixie Dust, Watermelon",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/360"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "MMDS Pre Workout Nitro Test",
+    "Sabor": "Blue Raspberry, Rocket Pop, Watermelon",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/361"
+  },
+  {
+    "Categoria": "Aminoacidos",
+    "Titulo": "BSN NO Xplode 60 serv",
+    "Sabor": "Green apple, Watermelon",
+    "Precio": 10000,
+    "URL": "https://picsum.photos/200/362"
+  }
+]
