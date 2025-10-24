@@ -1,12 +1,14 @@
 import React from "react";
+import 'animate.css';
+
 
 const ProductCard = ({ product }) => {
   return (
     <>
-      <div className="grid justify-center items-center gap-10 ">
+      <div className="grid justify-center items-center gap-10 animate__animated animate__fadeIn">
         <div className="relative flex justify-center items-center">
-          <div className="w-fit aspect-square bg-kairosgold rotate-12 flex justify-center items-center rounded-2xl">
-            <img src={product.URL} alt="" className="w-[300px] aspect-square -rotate-12"/>
+          <div className="w-fit aspect-square bg-kairosgold rotate-12 flex justify-center items-center rounded-2xl drop-shadow-xl drop-shadow-kairoswhite">
+            <img src={product.URL} alt="" className="md:w-[300px] aspect-square -rotate-12"/>
           </div>
         </div>
         <div className="text-center font-bold space-y-2 text-2xl">

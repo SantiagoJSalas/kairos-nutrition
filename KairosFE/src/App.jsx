@@ -1,5 +1,6 @@
 import React from "react";
 import {Routes, Route, Outlet } from 'react-router-dom';
+import Decoration from "./main/components/decoration";
 
 import Hero from './landing/hero';
 import Categories from './main/productCatalog';
@@ -14,7 +15,8 @@ const Layout = () => {
     return (
       <div className="w-full">
         <Categories />
-        <div className='w-full'>   
+        <div className='w-full px-4 relative'>
+          <Decoration/>
           <Outlet />
         </div>
       </div>
@@ -23,7 +25,7 @@ const Layout = () => {
 
 function App() {
   return (
-    <>
+    <div className="bg-kairosblack">
       <Hero/>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -35,7 +37,7 @@ function App() {
             <Route path="termogenicos" element={<Termogenicos />} />
         </Route>
       </Routes>
-    </>
+    </div>
 
   )
 }

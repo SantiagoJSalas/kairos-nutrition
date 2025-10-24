@@ -5,3 +5,11 @@
     --color-kairosgold: #e0a014;
     --color-kairosblack: #252525;
 }
+
+::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+html{
+      scroll-behavior: smooth;
+}
